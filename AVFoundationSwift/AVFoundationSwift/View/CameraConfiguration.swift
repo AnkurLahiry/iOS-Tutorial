@@ -56,6 +56,7 @@ extension CameraConfiguration {
         
         func createCaptureSession() {
             self.captureSession = AVCaptureSession()
+            self.captureSession?.automaticallyConfiguresCaptureDeviceForWideColor = false 
         }
         
         func configureCaptureDevices() throws {
